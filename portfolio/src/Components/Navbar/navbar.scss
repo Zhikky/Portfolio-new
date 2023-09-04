@@ -1,0 +1,132 @@
+.navbar_container {
+  // min-height: 100px;
+  width: 100vw;
+  height: 70px;
+  //   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+
+  .navbar_logo {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    // background-color: red;
+    h2 {
+      color: rgba(255, 255, 255, 0.9);
+      font-family: var(--font-family);
+      font-size: 2.4em;
+      letter-spacing: 2px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .navbar_links {
+    width: 50%;
+    align-items: flex-end;
+    // background-color: red;
+    display: flex;
+    color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+
+    ul {
+      display: flex;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      font-size: 1.2em;
+      border-right: 0.6px solid rgba(255, 255, 255, 0.464);
+
+      li > a {
+        color: var(--primary-color);
+      }
+    }
+
+    div {
+      width: 9.4em;
+      margin-left: 2em;
+
+      button {
+        min-width: 9.5em;
+        width: 100%;
+        padding: 0.9em 1.5em;
+        display: inline-block;
+        background-color: #030712;
+        color: #fff;
+        border: 1px solid #b8ec4c;
+        // border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar_container {
+    justify-content: space-between;
+    width: 100vw;
+
+    .navbar_logo {
+      padding-left: 5%;
+    }
+
+    #hamburger-menu {
+      display: flex;
+      align-items: center;
+      padding-right: 5%;
+    }
+
+    .navbar_links {
+      display: none;
+      width: 100%;
+      overflow: hidden;
+      animation: slideDown 1.1s ease-in-out;
+      overflow: hidden;
+      padding: 15px 0px 0px 10%;
+      flex-direction: column;
+      border-top: 0.1px solid var(--primary-color);
+      align-items: flex-start;
+
+      ul {
+        flex-direction: column;
+        border-right: 0px;
+        // border-bottom: 0.2px solid rgba(255, 255, 255, 0.464);
+        width: fit-content;
+        height: 100%;
+        align-items: flex-start;
+      }
+
+      div {
+        margin: 5px 0px 0px 0px;
+      }
+    }
+
+    .open {
+      display: flex;
+      height: 35vh;
+    }
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

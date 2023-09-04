@@ -1,10 +1,11 @@
 import React from "react";
+import "./Home.scss";
+import Navbar from "./Navbar/navbar";
 
 function Home() {
   return (
-    <div>
-      <p>Home Page</p>
-      <p>Get ready</p>
+    <div className="home">
+      <Navbar />
     </div>
   );
 }
