@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.scss";
-import Hamburger from "hamburger-react";
+import { Spin as Hamburger } from "hamburger-react";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -21,6 +21,8 @@ function Navbar() {
         <Hamburger
           toggled={isOpen}
           toggle={setOpen}
+          duration={0.6}
+          size={24}
           color="#ffffff"
           id="hamburger-menu"
         />
