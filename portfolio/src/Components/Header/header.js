@@ -2,6 +2,8 @@ import React from "react";
 import "./header.scss";
 import Spline from "@splinetool/react-spline";
 
+import downArrow from "../Images/arrow-down.png"
+
 function Header() {
   return (
     <div className="header_container">
@@ -18,6 +20,11 @@ function Header() {
       <div id="loader">
         <div id="box"></div>
         <div id="hill"></div>
+      </div>
+
+      <div className="header_more">
+        <p>Scroll to find more</p>
+        <img src={downArrow} alt="scroll for more" width="16px" height="16px"/>
       </div>
     </div>
   );
