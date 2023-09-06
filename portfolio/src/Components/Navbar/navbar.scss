@@ -2,11 +2,11 @@
   // min-height: 100px;
   width: 100vw;
   height: 90px;
-  //   background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: fixed;
+  // position: fixed;
+  z-index: 1;
 
   .navbar_logo {
     width: auto;

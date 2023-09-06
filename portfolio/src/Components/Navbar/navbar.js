@@ -5,12 +5,6 @@ import { Spin as Hamburger } from "hamburger-react";
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
 
-  //   const toggleHamburgerMenu = () => {
-  //     if (isOpen == true ){
-
-  //     }
-  //   };
-
   return (
     <div className="navbar_container">
       <div className="navbar_logo">
