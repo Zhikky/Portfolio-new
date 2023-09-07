@@ -22,10 +22,6 @@ function Header() {
         <div id="hill"></div>
       </div>
 
-      <div className="header_more">
-        <p>Scroll to find more</p>
-        <img src={downArrow} alt="scroll for more" width="16px" height="16px"/>
-      </div>
     </div>
   );
 }

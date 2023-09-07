@@ -1,0 +1,146 @@
+.body_container {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  background-color: #111b27;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .MyAwesomeParallax {
+    font-size: 16px;
+
+    h2 {
+      color: white;
+      font-size: 1.7em;
+      line-height: 1.25em;
+      // background-color: red;
+      margin-top: 10px;
+    }
+  }
+
+  .about_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    // background-color: red;
+
+    .about_icon {
+      width: 40%;
+      height: 100%;
+      // background-color: red;
+      display: flex;
+      justify-content: center;
+
+      .icon_container,
+      .icon_image {
+        width: 350px;
+        height: 350px;
+        // background-color: red;
+      }
+
+      .icon_container {
+        border: 8px solid #333;
+        border-radius: 50%;
+        animation: float 4s ease-in-out infinite;
+
+        .icon_image {
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+
+    .about_text {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      p {
+        width: 80%;
+        text-align: justify;
+        padding: 5px 0px;
+        padding-left: 6%;
+        font-size: 1.4em;
+        span {
+          color: #fff;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .body_container {
+    padding: 6% 0px;
+    font-size: 14px;
+
+    .about_content {
+      .about_icon {
+        .icon_container,
+        .icon_image {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .body_container {
+    .about_content {
+      flex-direction: column;
+
+      .about_text {
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+        p {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .body_container {
+    font-size: 12px;
+
+    .about_content {
+
+      .about_icon {
+        .icon_container,
+        .icon_image {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .about_text{
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
