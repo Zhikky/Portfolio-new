@@ -3,6 +3,7 @@ import "./Home.scss";
 import Navbar from "./Navbar/navbar";
 import Header from "./Header/header";
 import Body from "./Body/body";
+import Skills from "./Skills/skills";
 
 function Home() {
   return (
@@ -12,6 +13,8 @@ function Home() {
       <Header />
 
       <Body />
+
+      <Skills />
     </div>
   );
 }

@@ -8,16 +8,12 @@
   flex-direction: column;
   justify-content: center;
 
-  .MyAwesomeParallax {
-    font-size: 16px;
-
-    h2 {
-      color: white;
-      font-size: 1.7em;
-      line-height: 1.25em;
-      // background-color: red;
-      margin-top: 10px;
-    }
+  h2 {
+    color: white;
+    font-size: 1.7em;
+    line-height: 1.25em;
+    // background-color: red;
+    margin-top: 10px;
   }
 
   .about_content {
@@ -114,7 +110,6 @@
     font-size: 12px;
 
     .about_content {
-
       .about_icon {
         .icon_container,
         .icon_image {
@@ -123,7 +118,7 @@
         }
       }
 
-      .about_text{
+      .about_text {
         margin-top: 30px;
       }
     }

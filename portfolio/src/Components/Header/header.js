@@ -2,8 +2,6 @@ import React from "react";
 import "./header.scss";
 import Spline from "@splinetool/react-spline";
 
-import downArrow from "../Images/arrow-down.png"
-
 function Header() {
   return (
     <div className="header_container">

@@ -1,33 +1,11 @@
 import React from "react";
 import "./body.scss";
-import Plx from "react-plx";
-import Zhikky from "../Images/zhikky.png"
-
-const parallaxData = [
-  {
-    start: "self",
-    end: 500,
-    properties: [
-      {
-        startValue: -50,
-        endValue: 0,
-        property: "translateY",
-      },
-      {
-        startValue: 0,
-        endValue: 1,
-        property: "opacity",
-      },
-    ],
-  },
-];
+import Zhikky from "../Images/zhikky.png";
 
 function Body() {
   return (
     <div className="body_container" id="about">
-      <Plx className="MyAwesomeParallax" parallaxData={parallaxData}>
-        <h2>About Me</h2>
-      </Plx>
+      <h2 data-aos="fade-down">About Me</h2>
 
       <div className="about_content">
         <div className="about_icon">
@@ -35,7 +13,7 @@ function Body() {
             <img
               className="icon_image"
               src={Zhikky}
-            // src="#"
+              // src="#"
               alt="logo"
             />
           </div>
@@ -45,17 +23,18 @@ function Body() {
           <p>
             I am an innovative <span>Software Engineer</span> that specializes
             in creating interesting and distinctive front end systems using
-            modern frameworks and technologies. With expertise spanning
-            React.js, Vue.js, CSS preprocessors like SASS, and other
+            modern frameworks and technologies. With expertise spanning React,
+            Javascript, Typescript, Vue, CSS preprocessors like SASS, and other
             technologies, I transform ideas into immersive digital experiences.
           </p>
           <p>
             Constantly fueling my passion for growth, I thrive on challenges
-            that push the boundaries of my expertise. With over <span>two years</span> of
-            diverse experience, from freelancing to thriving in more corporate
-            environments, I've honed my skills and sculpted my creativity. I am
-            not just a programmer, I am a creator, with codes as my tools. Let's
-            build something extraordinary together.
+            that push the boundaries of my expertise. With over{" "}
+            <span>two years</span> of diverse experience, from freelancing to
+            thriving in more corporate environments, I've honed my skills and
+            sculpted my creativity. I am not just a programmer, I am a creator,
+            with codes as my tools. Let's build something extraordinary
+            together.
           </p>
         </div>
       </div>
