@@ -5,6 +5,7 @@ import Header from "./Header/header";
 import Body from "./Body/body";
 import Skills from "./Skills/skills";
 import Projects from "./Projects/projects";
+import Contact from "./Contact/contact";
 
 function Home() {
   return (
@@ -18,6 +19,8 @@ function Home() {
       <Skills />
 
       <Projects />
+
+      <Contact />
     </div>
   );
 }
