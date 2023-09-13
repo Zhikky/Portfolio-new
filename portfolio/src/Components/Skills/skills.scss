@@ -108,6 +108,13 @@
 @media (max-width: 480px){
   .skills_container{
     font-size: 12px;
+    .stacks_container{
+      .stacks{
+        i:nth-last-child(1){
+          margin-top: 0.2em;
+        }
+      }
+    }
   }
 }
 

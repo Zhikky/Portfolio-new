@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   color: var(--primary-color);
+  margin-bottom: 5em;
 
   > div {
     width: 80%;
@@ -102,10 +103,15 @@
     font-size: 12px;
     > div {
       min-height: 400px;
-      form {
-        width: 90%;
+      width: 85%;
 
-        textarea{
+      h3 {
+        width: 100%;
+      }
+      form {
+        width: 100%;
+
+        textarea {
           height: 4em;
         }
       }

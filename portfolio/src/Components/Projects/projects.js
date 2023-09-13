@@ -25,14 +25,6 @@ function Projects() {
       link: "https://hernalytic1.web.app/",
     },
     {
-      name: "LendsQr",
-      description:
-        "LendsQr is a dynamic project showcasing proficiency in React, haven masterfully handled API requests and adeptly managed data. It provides an intuitive platform for managing loan artisans and customers, offering a seamless experience in data management and interaction.",
-      stacks: ["HTML", "CSS", "React", "Javascript", "Firebase", "Figma"],
-      image: Lendsqr,
-      link: "https://ezekiel-lendsqr-fe-test.web.app/userpage",
-    },
-    {
       name: "Scissor",
       description:
         "Scissor represents the convergence of React and TypeScript, elevating link management to new heights. This web application excels in custom link generation, efficient link shortening, and even QR code creation. It adheres to the highest standards of markdown practices, making it a versatile and robust tool for digital link management.",
@@ -49,10 +41,18 @@ function Projects() {
       image: Scissor,
       link: "https://ezekiel-lendsqr-fe-test.web.app/userpage",
     },
+    {
+      name: "LendsQr   (desktop devices only)",
+      description:
+        "LendsQr is a dynamic project showcasing proficiency in React, haven masterfully handled API requests and adeptly managed data. It provides an intuitive platform for managing loan artisans and customers, offering a seamless experience in data management and interaction.",
+      stacks: ["HTML", "CSS", "React", "Javascript", "Firebase", "Figma"],
+      image: Lendsqr,
+      link: "https://ezekiel-lendsqr-fe-test.web.app/userpage",
+    },
   ];
 
   return (
-    <div className="projects_container">
+    <div className="projects_container" id="projects">
       <h2 data-aos="fade-down">Projects</h2>
 
       <p>Check out some noteworthy projects...</p>

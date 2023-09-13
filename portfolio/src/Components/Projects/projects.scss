@@ -153,14 +153,20 @@
 }
 
 @media (max-width: 768px) {
-    .projects_container{
-        font-size: 14px;
-    }
-
+  .projects_container {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
-    .projects_container{
-        font-size: 12px;
+  .projects_container {
+    font-size: 12px;
+
+    .projects {
+      width: 80%;
+      .project {
+        width: auto;
+      }
     }
+  }
 }

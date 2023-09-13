@@ -1,11 +1,9 @@
 import React from "react";
 import "./contact.scss";
 
-import contact from "../Images/contact.jpeg";
-
 function Contact() {
   return (
-    <div className="contact_container">
+    <div className="contact_container" id="contact">
       <div>
         <h3>
           Got a project in mind?, <span>let's make it happen</span>

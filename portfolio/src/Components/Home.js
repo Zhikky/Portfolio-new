@@ -6,6 +6,7 @@ import Body from "./Body/body";
 import Skills from "./Skills/skills";
 import Projects from "./Projects/projects";
 import Contact from "./Contact/contact";
+import Footer from "./Footer/footer";
 
 function Home() {
   return (
@@ -21,6 +22,8 @@ function Home() {
       <Projects />
 
       <Contact />
+
+      <Footer />
     </div>
   );
 }

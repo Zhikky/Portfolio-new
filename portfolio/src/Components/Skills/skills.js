@@ -3,7 +3,7 @@ import "./skills.scss";
 
 function Skills() {
   return (
-    <div className="skills_container">
+    <div className="skills_container" id="skills">
       <h2 data-aos="fade-down">Skills</h2>
 
       <p>Here are some of my tech stacks....</p>

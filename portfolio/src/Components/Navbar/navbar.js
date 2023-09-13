@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./navbar.scss";
 import { Spin as Hamburger } from "hamburger-react";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
+  const documentUrl = "../Images/Ezekiel_Adetuwo_CV.pdf";
 
   return (
     <div className="navbar_container">
@@ -22,26 +24,60 @@ function Navbar() {
         />
       </div>
 
-      <div className={`navbar_links ${isOpen ? "open" : ""}`}>
+      <div className={`navbar_links ${isOpen ? "open" : "close"}`}>
         <ul>
           <li>
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/about/">About</a>
+            <a
+              href="#"
+              onClick={() => {
+                const about = document.getElementById("about");
+                about.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href="/Skills/">Skills</a>
+            <a
+              href="#"
+              onClick={() => {
+                const about = document.getElementById("skills");
+                about.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Skills
+            </a>
           </li>
           <li>
-            <a href="/Projects/">Projects</a>
+            <a
+              href="#"
+              onClick={() => {
+                const about = document.getElementById("projects");
+                about.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <a href="/Contact/">Contact</a>
+            <a
+              href="#"
+              onClick={() => {
+                const about = document.getElementById("contact");
+                about.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
         <div>
-          <button>Download CV</button>
+          <a href={documentUrl} download="Ezekiel_Adetuwo_CV.pdf">
+            <button>Download CV</button>
+          </a>
         </div>
       </div>
     </div>
