@@ -15,7 +15,7 @@ function Header() {
         <Spline scene="https://prod.spline.design/OVftTRYnCNFUaJY9/scene.splinecode" />
       </div>
 
-      <div id="loader">
+      <div id="loader_header">
         <div id="box"></div>
         <div id="hill"></div>
       </div>

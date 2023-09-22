@@ -1,9 +1,9 @@
 import React from "react";
 import "./projects.scss";
 
-import Hernalytics from "../Images/Hernalytics.png";
-import Lendsqr from "../Images/Lendsqr.png";
-import Scissor from "../Images/Scissor.png";
+import Hernalytics from "../Images/Hernalytics.jpg";
+import Lendsqr from "../Images/Lendsqr.jpg";
+import Scissor from "../Images/Scissor.jpg";
 import Right from "../Images/right.png";
 
 function Projects() {
@@ -77,7 +77,7 @@ function Projects() {
                 </div>
 
                 <a href={project.link} target="_blank" rel="noreferrer">
-                  Have a look <img src={Right} alt="" />
+                  Have a look <img src={Right} alt="" width="22.4px" height="100%"/>
                 </a>
               </div>
             </div>

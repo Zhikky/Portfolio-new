@@ -26,13 +26,13 @@ function Footer() {
         <div>
           <p>links</p>
           <ul>
-            <a href="">
+            <a href="https://www.instagram.com/zhikky_studios/">
               <li>Instagram</li>
             </a>
-            <a href="">
+            <a href="https://twitter.com/EzekielAdetuwo">
               <li>Twitter</li>
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/ezekieladetuwo/">
               <li>LinkedIn</li>
             </a>
           </ul>
