@@ -39,7 +39,7 @@ function Projects() {
         "Figma",
       ],
       image: Scissor,
-      link: "https://ezekiel-lendsqr-fe-test.web.app/userpage",
+      link: "https://scissor-alt.web.app/",
     },
     {
       name: "LendsQr   (desktop devices only)",
