@@ -19,7 +19,6 @@ function Header() {
         <div id="box"></div>
         <div id="hill"></div>
       </div>
-
     </div>
   );
 }
